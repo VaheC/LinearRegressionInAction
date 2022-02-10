@@ -19,7 +19,7 @@ def predict():
 
         data = pd.DataFrame([ptemp, hdf]).T
         data.columns = ['Process temperature [K]', 'HDF']
-        prediction = model.predict(data)
+        prediction = model.predict(data)[0]
 
         prediction_text = f'Predicted air temperature is {prediction:.2f} %.'
         return render_template('index.html', prediction_text=prediction_text)
