@@ -21,7 +21,7 @@ def predict():
         data.columns = ['Process temperature [K]', 'HDF']
         prediction = model.predict(data)[0]
 
-        prediction_text = f'Predicted air temperature is {prediction:.2f}.'
+        prediction_text = f'Predicted air temperature is {prediction:.2f} K.'
         return render_template('index.html', prediction_text=prediction_text)
     else:
         return render_template('index.html')
