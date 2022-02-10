@@ -87,7 +87,14 @@ logger.info('Model estimation has started.')
 pipe_model.fit(X_train, y_train)
 logger.info('Model estimation is finished.')
 
-test_accuracy = pipe_model.score(X_test, y_test)
+def adj_r2(X, y, model):
+    r2 = model.score(X, y)
+    n = X.shape[0]
+    p = X.shape[1]
+    adjusted_r2 = 1 - (1 - r2) * (n - 1) / (n - p - 1)
+    return adjusted_r2
+
+test_accuracy = adj_r2(X=X_test, y=y_test, model=pipe_model)
 logger.info(f"Test accuracy is {test_accuracy}.")
 
 # Saving the model
