@@ -95,7 +95,7 @@ def adj_r2(X, y, model):
     return adjusted_r2
 
 test_accuracy = adj_r2(X=X_test, y=y_test, model=pipe_model)
-logger.info(f"Test accuracy is {test_accuracy}.")
+logger.info(f"Test accuracy is {test_accuracy:.4}.")
 
 # Saving the model
 logger.info('Model saving process has started.')
