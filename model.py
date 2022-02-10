@@ -48,3 +48,15 @@ def create_logger(log_file):
 # Initiating a logger
 logger = create_logger('model_flow')
 
+# Loading the data from UCI
+try:
+	logger.info('Connecting to UCI')
+
+	df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/00601/ai4i2020.csv')
+
+	logger.info('The data is loaded.')
+except:
+	logger.critical('The data is not available.', exc_info=True)
+
+
+
