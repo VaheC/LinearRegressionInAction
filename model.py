@@ -58,5 +58,17 @@ try:
 except:
 	logger.critical('The data is not available.', exc_info=True)
 
+# Data preparation
+logger.info('Data preparation has started.')
+
+y = df.pop('Air temperature [K]')
+X = df[['Process temperature [K]', 'HDF']]
+del df
+
+logger.info('Train-test split has started.')
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8, random_state=42)
+logger.info('Train-test split is finished.')
+
+logger.info('Data preparation is finished.')
 
 
