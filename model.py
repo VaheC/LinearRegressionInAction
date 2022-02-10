@@ -71,4 +71,13 @@ logger.info('Train-test split is finished.')
 
 logger.info('Data preparation is finished.')
 
-
+# Model creation
+logger.info('Model creation has started.')
+numeric_transformer = StandardScaler()
+preprocessor = ColumnTransformer(transformers=[('num', 
+                                                numeric_transformer, 
+                                                ['Process temperature [K]'])],
+                                 remainder='passthrough')
+pipe_model = Pipeline([('preprocessor', preprocessor), 
+                       ('model', LinearRegression())])
+logger.info('Model creation is finished.')
