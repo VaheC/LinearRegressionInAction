@@ -89,3 +89,9 @@ logger.info('Model estimation is finished.')
 
 test_accuracy = pipe_model.score(X_test, y_test)
 logger.info(f"Test accuracy is {test_accuracy}.")
+
+# Saving the model
+logger.info('Model saving process has started.')
+file = 'regression_model.pickle'
+pickle.dump(pipe_model, open(file, 'wb'))
+logger.info('Model saving process is finished.')
