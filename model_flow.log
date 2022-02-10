@@ -1,13 +1,13 @@
-10-Feb-22 10:02:54 - INFO - Connecting to UCI
-10-Feb-22 10:02:59 - INFO - The data is loaded.
-10-Feb-22 10:02:59 - INFO - Data preparation has started.
-10-Feb-22 10:02:59 - INFO - Train-test split has started.
-10-Feb-22 10:02:59 - INFO - Train-test split is finished.
-10-Feb-22 10:02:59 - INFO - Data preparation is finished.
-10-Feb-22 10:02:59 - INFO - Model creation has started.
-10-Feb-22 10:02:59 - INFO - Model creation is finished.
-10-Feb-22 10:02:59 - INFO - Model estimation has started.
-10-Feb-22 10:03:01 - INFO - Model estimation is finished.
-10-Feb-22 10:03:01 - INFO - Test accuracy is 0.775.
-10-Feb-22 10:03:01 - INFO - Model saving process has started.
-10-Feb-22 10:03:01 - INFO - Model saving process is finished.
+10-Feb-22 18:45:18 - INFO - Connecting to UCI
+10-Feb-22 18:45:22 - INFO - The data is loaded.
+10-Feb-22 18:45:22 - INFO - Data preparation has started.
+10-Feb-22 18:45:22 - INFO - Train-test split has started.
+10-Feb-22 18:45:22 - INFO - Train-test split is finished.
+10-Feb-22 18:45:22 - INFO - Data preparation is finished.
+10-Feb-22 18:45:22 - INFO - Model creation has started.
+10-Feb-22 18:45:22 - INFO - Model creation is finished.
+10-Feb-22 18:45:22 - INFO - Model estimation has started.
+10-Feb-22 18:45:23 - INFO - Model estimation is finished.
+10-Feb-22 18:45:23 - INFO - Test accuracy is 0.775.
+10-Feb-22 18:45:23 - INFO - Model saving process has started.
+10-Feb-22 18:45:54 - INFO - Model saving process is finished.
