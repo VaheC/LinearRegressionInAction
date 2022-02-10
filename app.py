@@ -11,6 +11,10 @@ model = pickle.load(open('regression_model.pickle', 'rb'))
 def Home():
     return render_template('index.html')
 
+@app.route('/regression_project_report',methods=['GET'])
+def eda():
+    return render_template('regression_project_report.html')
+
 @app.route("/predict", methods=['POST'])
 def predict():
     if request.method == 'POST':
