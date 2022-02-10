@@ -81,3 +81,11 @@ preprocessor = ColumnTransformer(transformers=[('num',
 pipe_model = Pipeline([('preprocessor', preprocessor), 
                        ('model', LinearRegression())])
 logger.info('Model creation is finished.')
+
+# Model estimation
+logger.info('Model estimation has started.')
+pipe_model.fit(X_train, y_train)
+logger.info('Model estimation is finished.')
+
+test_accuracy = pipe_model.score(X_test, y_test)
+logger.info(f"Test accuracy is {test_accuracy}.")
