@@ -10,7 +10,7 @@
 <body>
 
     <div style="color:white">
-        <form action="{url_for('predict')}}" method="post">
+        <form action="{ url_for('predict')}}" method="post">
             <h2>Air temperature prediction</h2>
 
             <div class='left'>
@@ -27,7 +27,7 @@
                 <br>
                 <br>
                 <br>
-                <button id="predict" type="submit ">Predict</button>
+                <button id="estimate" type="submit ">Predict</button>
                 <br>
                 <br>
                 <button id="eda" onclick="location.href='regression_project_report.html'" type="button">Check EDA</button>
@@ -73,7 +73,7 @@
             background-color: coral;
         }
 
-        #predict {
+        #estimate {
             width:  200px;
             border-radius: 14px;
             height: 25px;
@@ -81,7 +81,7 @@
             text-align: center;
         }
 
-        #predict:hover {
+        #estimate:hover {
             background-color: seagreen;
         }
 
