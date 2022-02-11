@@ -53,3 +53,4 @@ virtualenv==16.7.5
 visions==0.7.4
 Werkzeug==1.0.1
 zipp==3.7.0
+gunicorn
