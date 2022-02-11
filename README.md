@@ -9,7 +9,7 @@ templates folder contains web app templates.\
 LinearRegressionProject.ipynb contains exploratory data analysis and feature selection procedure in detail.
 
 ## Deployment
-At this moment the project is not deployed.
+The project is deployed on heroku.
 
 ## Installation
 
